@@ -114,21 +114,56 @@
 
 // $$$$$$$ LEETCODE PROBLEM NUMBER 1 $$$$$$$$$$$
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cout << "ENTER THE VALUE OF N: " << endl;
+//     cin >> n;
+//     int prod = 1;
+//     int sum = 0;
+//     while(n!=0){
+//         int new_num = n%10;
+//         prod = prod * new_num;
+//         sum = sum + new_num;
+//         n/10;
+//     }
+//     cout<<prod-sum<<endl;
+//     return 0;
+// };
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int num;
+//     cout<<"ENTER THE VALUE OF NUM : "<<endl;
+//     cin>>num;
+//     int sum = 0;
+//     int prod = 1;
+//     while(num>0){
+//         int new_num = num %10;
+//         sum = sum + new_num;
+//         prod = prod*new_num;
+//         num = num /10;
+//     }
+//     cout<<prod - sum<<endl;
+//     return 0;
+// }
+
+// $$$$$$ REVERE AN INTERGER $$$$$$$$$$
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-    int n;
-    cout << "ENTER THE VALUE OF N: " << endl;
-    cin >> n;
-    int prod = 1;
-    int sum = 0;
-    while(n!=0){
-        int new_num = n%10;
-        prod = prod * new_num;
-        sum = sum + new_num;
-        n/10;
-    }
-    cout<<prod-sum<<endl;
+int main(){
+    int num;
+    cout<<"ENTER THE VALUE OF NUM : "<<endl;
+    cin>>num;
+    int rev_num = 0;
+    while(num>0){
+        int new_num = num%10;
+        rev_num = rev_num *10 + new_num;
+        num = num/10;
+    };
+    cout<<rev_num;
     return 0;
-};
+}
