@@ -152,18 +152,337 @@
 // }
 
 // $$$$$$ REVERE AN INTERGER $$$$$$$$$$
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int num;
+//     cout<<"ENTER THE VALUE OF NUM : "<<endl;
+//     cin>>num;
+//     int rev_num = 0;
+//     while(num>0){
+//         int new_num = num%10;
+//         rev_num = rev_num *10 + new_num;
+//         num = num/10;
+//     };
+//     cout<<rev_num;
+//     return 0;
+// }
+
+// $$$$$$$$$ DECIMAL TO BINARY CONVERSION $$$$$$$$$$
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"ENTER THE NUMBER : "<<endl;
+//     cin>>n;
+//     int digit = 0;
+//     while(n>0){
+//         int new_num = n%2;
+//         digit = digit * 10 + new_num;
+//         n = n/2;
+//     };
+//     cout<<digit;
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"ENTER THE NUMBER : "<<endl;
+//     cin>>n;
+//     int num = 0;
+//     int main_num = 0;
+//     while(n>0){
+//         int bit = n&1;
+//         num = num * 10 + bit;
+//         n = n>>1;
+
+//         main_num = main_num *10 + num;
+
+//     };
+//     cout<<num;
+//     cout<<main_num;
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// #include<math.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"ENTER THE NUMBER : "<<endl;
+//     cin>>n;
+//     int ans = 0;
+//     int i = 0;
+//     while(n != 0){
+//         int bit = n&1;
+//         ans = (bit * pow(10,i)) + ans;
+//         n = n>>1;
+//         i++;
+//     };
+//     cout<<"THE ANSWER IS : "<<ans;
+//     return 0;
+// }
+
+
+
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+// #include <iostream>
+// #include<math.h>
+
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout<<"ENTER THE VALUE OF N: "<<endl;
+//     cin>>n;
+//     int ans = 0;
+//     int i = 0;
+//     while(n!=0){
+//         int bit = n&1;
+//         ans = (bit * pow(10,i)) + ans;
+//         n = n>>1;
+//         i++;
+//     };
+//     cout<<ans;
+
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     int prod = 1;
+//     int sum = 0;
+//     cout<<"ENTER : "<<endl;
+//     cin>>n;
+//     while(n != 0){
+//         int digit = n % 10;
+//         prod = prod * digit;
+//         sum = sum + digit;
+//         n = n/10; 
+//     };
+//     cout<<"THE ANSWER IS : "<<prod - sum;
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter : "<<endl;
+//     cin>>n;
+//     int sum = 0;
+//     while(n != 0){
+//         if(n&1){
+//             sum++;
+//         };
+//         n = n>>1;
+//     }
+//     cout<<sum;
+//     return 0;
+// };
+
+//  $$$$$$$$$$$$ NUMBER OF 1s IN A AN INTEGER $$$$$$$$
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"ENTER THE NUMBER : "<<endl;
+//     cin>>n;
+//     int count = 0;
+//     while(n != 0){
+//         if( n&1){
+//             count++;
+//         }
+//         n = n>>1;
+//     };
+//     cout<<count<<endl;
+//     return 0;
+// };
+
+
+// ######### 14th MAY 2022 FUNCTIONS IN C++ ###########
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// void re(){
+//     cout<<"HELLO THERE THIS IS FROM FUNCTION"<<endl;
+// }
+// int main(){
+//     re();
+//     return 0;
+// }
+
+// $$$$$$$$ SUM OF 2 NUMBERS USING FUNCTION $$$$$$
+// #include<bits/stdc++.h>
+// using namespace std;
+// void sum(int a, int b){
+//     cout<<"THE SUM IS : "<<a+b;
+
+// }
+// int main(){
+//     sum(5,5);
+//     return 0;
+// };
+
+// $$$$$$$$ CALL BY VALUE $$$$$$$$$$$
+// #include<bits/stdc++.h>
+// using namespace std;
+// void pri(int n);
+// int main(){
+//     int n = 5;
+//     pri(10);
+//     cout<<"main ka num = "<<n;
+//     return 0;
+// };
+// void pri(int n){
+//     cout<<"ye function ka num hai = "<<n;
+// };
+
+// ###### CALL BY VALUE DIFFER EXAMPLE #########
+// #include<bits/stdc++.h>
+// using namespace std;
+// void yachna(int m){
+//     cout<<"YACHNA VALUE : "<<m<<endl;
+
+// };
+// void vivek(int k){
+//     cout<<"VIVEK VALUE : "<<k<<endl;
+//     k++;
+//     yachna(k);
+// };
+// int main(){
+//     int n = 59;
+//     vivek(n);
+//     cout<<"MAIN FUNCTION VALUE : "<<n<<endl;
+//     return 0;
+// };
+
+// $$$$$$$ all even number till n ###########
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i = 1; i<=n; i++){
+//         if(i%2 == 0){
+//             cout<<i<<" IS A EVEN NUMBER."<<endl;
+//         };
+//     };
+//     return 0;
+// }
+
+// USING FUNCTION 
+// #include<bits/stdc++.h>
+// using namespace std;
+// void isEven(){
+//     int n;
+//     cout<<"ENTER THE VALUE OF N : "<<endl;
+//     cin>>n;
+//     for(int i = 1; i<=n; i++){
+//         if(i%2 == 0){
+//             cout<<i<<" IS A EVEN NUMBER."<<endl;
+//         };
+//     };
+// }
+// int main(){
+//     isEven();
+//     return 0;
+// };
+
+
+// SQUARE OF A NUMBER TILL N
+// #include<bits/stdc++.h>
+// using namespace std;
+// void sqr(){
+//     int n;
+//     cout<<"ENTER : "<<endl;
+//     cin>>n;
+//     for(int i = 1; i<=n; i++){
+//         cout<<"SQUARE OF "<<i<<" is "<<i*i<<endl;
+//     }
+// }
+// int main(){
+//     sqr();
+//     return 0;
+// }
+
+
+// FACTORIAL OF A NUMBER USING FUNCTION 
+// #include<bits/stdc++.h>
+// using namespace std;
+// void fact(){
+//     int n;
+//     cout<<"ENTER : "<<endl;
+//     cin>>n;
+//     int fact = 1;
+//     for(int i = n; i>0; i--){
+//         fact = fact*i;
+//     };
+//     cout<<"FACTORIAL OF "<<n<<" IS "<<fact<<endl;
+// };
+// int main(){
+//     fact();
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// void name(){
+//     int n;
+//     cout<<"ENTER : "<<endl;
+//     cin>>n;
+//     for(int i = 1; i<=n; i++){
+//         cout<<"VIVEK SINGH RAJPUT"<<endl;
+//     }
+// };
+// int main(){
+//     name();
+//     return 0;
+// };
+
+// $$$$$$$$$$$ 16th MAY 2022 ARRAY IN C++ $$$$$$$$$$$
+
+// ### PRINTING THE ELEMENTS OF AN ARRAY ###
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[5] = {1};
+//     for(int i = 0; i<5; i++){
+//         cout<<arr[i]<<endl;
+//     };
+//     return 0;
+// };
+
+
+// ## PRINTING THE ELEMENTS OF AN ARRAY USING FUNCTION ###
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
-    int num;
-    cout<<"ENTER THE VALUE OF NUM : "<<endl;
-    cin>>num;
-    int rev_num = 0;
-    while(num>0){
-        int new_num = num%10;
-        rev_num = rev_num *10 + new_num;
-        num = num/10;
+void print_arr(int rr[], int size){
+    rr[0] = 20;
+    for(int i = 0; i<size; i++){
+        cout<<rr[i]<<endl;
+
     };
-    cout<<rev_num;
+};
+int main(){
+    int arr[6] = {1,2,43,45,77,4};
+    
+    for(int i = 0; i<6; i++){
+        cout<<"YE MAIN WALA ARRAY KA HAI : "<<arr[i]<<endl;
+    };
+    print_arr(arr,6);
     return 0;
-}
+};
