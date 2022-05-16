@@ -468,21 +468,97 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 
 // ## PRINTING THE ELEMENTS OF AN ARRAY USING FUNCTION ###
+// #include<bits/stdc++.h>
+// using namespace std;
+// void print_arr(int rr[], int size){
+//     rr[0] = 20;
+//     for(int i = 0; i<size; i++){
+//         cout<<rr[i]<<endl;
+
+//     };
+// };
+// int main(){
+//     int arr[6] = {1,2,43,45,77,4};
+    
+//     for(int i = 0; i<6; i++){
+//         cout<<"YE MAIN WALA ARRAY KA HAI : "<<arr[i]<<endl;
+//     };
+//     print_arr(arr,6);
+//     return 0;
+// };
+
+// ###### TAKING INPUT IN AN ARRAY #####
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"ENTER THE NUMBER : "<<endl;
+//     cin>>n;
+//     int arr[100];
+//     // TAKING INPUT
+//     for(int i = 0; i<n; i++){
+//         cin>>arr[i];
+//     };
+//     // PRINTING OUTPUT
+//     for(int i = 0; i<n; i++){
+//         cout<<arr[i]<<endl;
+//     };
+//     return 0;
+// };
+
+
+// Liner search 
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool pre(int arr[],int size, int target){
+//     for(int i = 0; i<size; i++){
+//         if(arr[i] == target){
+//             cout<<"The number is found : "<<i<<endl;
+//         }else{
+//             cout<<"NUMBER NOT FOUND."<<endl;
+//         };
+//     };
+// }
+// void inp_arr(int arr[], int size){
+//     for(int i = 0; i<size; i++){
+//         cout<<"ELEMNT IS : "<<arr[i]<<endl;
+//     };
+// }
+// int main(){
+//     int arr[20];
+//     int n;
+//     cout<<"ENTER THE NUMBER : "<<endl;
+//     cin>>n;
+//     for(int i = 0; i<n; i++){
+//         cin>>arr[i];
+//     };
+//     pre(arr,5,7);
+//     // inp_arr(arr,5);
+//     return 0;
+// };
+
+// $$$$ Given an array nums of integers, return how many of them contain an even number of digits.%%%%%%%%%
+
 #include<bits/stdc++.h>
 using namespace std;
-void print_arr(int rr[], int size){
-    rr[0] = 20;
+void print_arr(int arr[], int size){
+    int count = 0;
     for(int i = 0; i<size; i++){
-        cout<<rr[i]<<endl;
-
+        if(arr[i]%2 == 0){
+            count++;
+        }
     };
+    cout<<"total number of even numbers in this array is : "<<count<<endl;
 };
 int main(){
-    int arr[6] = {1,2,43,45,77,4};
-    
-    for(int i = 0; i<6; i++){
-        cout<<"YE MAIN WALA ARRAY KA HAI : "<<arr[i]<<endl;
+    int arr[500];
+    int n;
+    cout<<"ENTER THE VALUE OF N : "<<endl;
+    cin>>n;
+    for(int i = 0; i<n; i++){
+        cin>>arr[i];
     };
     print_arr(arr,6);
     return 0;
+
 };
